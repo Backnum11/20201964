@@ -100,7 +100,7 @@
     };
     
     function checkImages(event) {
-        if (selectedImages.some(i=>["http://127.0.0.1:5502/%EB%85%B8%EC%95%BD%EC%9E%90.png","http://127.0.0.1:5502/%EA%B8%B0%EC%B0%A8.png","http://127.0.0.1:5502/%EB%82%A8%EB%85%80.png"].includes(i))===true) {
+        if (selectedImages.some(i=>["http://127.0.0.1:5500/%EC%9E%91%EC%97%85%EB%8C%80/%EB%85%B8%EC%95%BD%EC%9E%90.png","http://127.0.0.1:5500/%EC%9E%91%EC%97%85%EB%8C%80/%EA%B8%B0%EC%B0%A8.png","http://127.0.0.1:5500/%EC%9E%91%EC%97%85%EB%8C%80/%EB%82%A8%EB%85%80.png"].includes(i))===true) {
             alert("틀린 사진이 있습니다.")
             }else if (selectedImages.length===0) {
                 alert('사진을 선택해주세요');//사진이 선택 되지 않았을 때
