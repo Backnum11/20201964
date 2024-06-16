@@ -67,7 +67,7 @@
 
     function startRadomDisplay() {
         const randomImages = allImages; // 이미지 배열을 가지고 와
-        randomImages.sort(() => Math.random() - 0.5); // 완전 랜덤 루프를 돌리고 싶어서 찾아봤더니 0.5를 뺌.. 
+        randomImages.sort(() => Math.random() - 0.5); // 배열 랜덤(0.5를 하여 양수와 음수의 결과로 완전 랜덤을 돌릴 수 있다 )
         const displayedImages = randomImages.slice(0, 5); // 첫 5개의 이미지만 선택(0,1,2,3,4)
 
         //재시작 시 기존 배열 삭제 및 이미지 RESET
@@ -107,7 +107,7 @@
                 }else{
                     alert("맞았습니다.")
                     const imageContainer = document.getElementById("imageContainer");
-                    imageContainer.innerHTML = ''; // 이미지 초기화 !!innerHTML?
+                    imageContainer.innerHTML = ''; // 이미지 초기화
                     selectedImages = []; // 선택한 이미지 배열 초기화
         }            
     };
